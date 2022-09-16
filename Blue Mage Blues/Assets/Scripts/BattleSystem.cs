@@ -85,7 +85,7 @@ public class BattleSystem : MonoBehaviour
     }
 
     IEnumerator EnemyTurn(){
-        dialogueText.text = enemyUnit.unitName + " attacks!";
+        dialogueText.text = enemyUnit.unitName + " attacks and deals " + enemyUnit.damage + "!";
 
         yield return new WaitForSeconds(1f);
         
